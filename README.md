@@ -105,4 +105,5 @@ Any mistakes, suggestions, or contributions? Feel free to reach out to me at:
 I look forward to connecting with you! 🏃‍♂️
 
 # 📄 License
-This repository is licensed under the **[MIT License](./LICENSE)**.
+This project is licensed under the **[Apache License 2.0](./LICENSE)**.  
+You are free to use, modify, and distribute this code, but you must include copies of both the [**LICENSE**](./LICENSE) and [**NOTICE**](./NOTICE) files in any distribution of your work.
