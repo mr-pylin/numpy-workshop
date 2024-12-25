@@ -14,47 +14,47 @@ An in-depth guide to mastering **NumPy**, covering fundamental to advanced array
 
 ### 📖 Main Notebooks
 
-1. [**Array Basics**](./codes/01-array-basics.ipynb)  
+1. [**Array Basics**](./code/01-array-basics.ipynb)  
    Introduction to NumPy arrays
-1. [**Arithmetic Operations**](./codes/02-arithmetic-operations.ipynb)  
+1. [**Arithmetic Operations**](./code/02-arithmetic-operations.ipynb)  
    Arithmetic operations between (array & scalar) or (array & array)
-1. [**Comparative Operations**](./codes/03-comparative-operations.ipynb)  
+1. [**Comparative Operations**](./code/03-comparative-operations.ipynb)  
    Comparative operations between (array & scalar) or (array & array)
-1. [**Index & Slice**](./codes/04-index-&-slice.ipynb)  
+1. [**Index & Slice**](./code/04-index-&-slice.ipynb)  
    Basic and advanced indexing and slicing arrays including Mask & Filters
-1. [**Axes**](./codes/05-axes.ipynb)  
+1. [**Axes**](./code/05-axes.ipynb)  
    Understanding use of axes in multi-dimensional arrays combined with methods [the hardest part in NumPy for newbies in my opinion]
-1. [**Array Manipulations**](./codes/06-array-manipulations.ipynb)  
+1. [**Array Manipulations**](./code/06-array-manipulations.ipynb)  
    Techniques for updating values, appending, inserting, reshaping, concatenating, ...
-1. [**NdArray properties & methods**](./codes/07-ndarray-members.ipynb)  
+1. [**NdArray properties & methods**](./code/07-ndarray-members.ipynb)  
    Comprehensive overview of properties and methods associated with NumPy arrays.
-1. [**Array Creation**](./codes/08-array-creation.ipynb)  
+1. [**Array Creation**](./code/08-array-creation.ipynb)  
    Various methods to create NumPy arrays (e.g., `numpy.array`, `numpy.zeros`, etc.).
-1. [**Mathematics**](./codes/09-mathematics.ipynb)  
+1. [**Mathematics**](./code/09-mathematics.ipynb)  
    Mathematical functions and operations available in NumPy
-1. [**Statistics**](./codes/10-statistics.ipynb)  
+1. [**Statistics**](./code/10-statistics.ipynb)  
    Statistical functions for data analysis (mean, median, variance, etc.).
-1. [**Sort, Search & Count**](./codes/11-sort-search-count.ipynb)  
+1. [**Sort, Search & Count**](./code/11-sort-search-count.ipynb)  
    Methods for sorting, searching, and counting elements in arrays.
-1. [**Logic**](./codes/12-logic.ipynb)  
+1. [**Logic**](./code/12-logic.ipynb)  
    Logical operations and boolean indexing with NumPy arrays.
-1. [**Set**](./codes/13-set.ipynb)  
+1. [**Set**](./code/13-set.ipynb)  
    Set operations for array elements (union, intersection, difference).
-1. [**Linear Algebra**](./codes/14-linear-algebra.ipynb)  
+1. [**Linear Algebra**](./code/14-linear-algebra.ipynb)  
    Fundamental linear algebra operations using NumPy (matrix multiplication, determinants).
-1. [**Structured Array**](./codes/15-structured-array.ipynb)  
+1. [**Structured Array**](./code/15-structured-array.ipynb)  
    Creating and manipulating structured arrays with custom data types.
-1. [**Input/Output**](./codes/16-input-output.ipynb)  
+1. [**Input/Output**](./code/16-input-output.ipynb)  
    Techniques for reading from and writing to files using NumPy.
-1. [**Random Generator**](./codes/17-random-generator.ipynb)  
+1. [**Random Generator**](./code/17-random-generator.ipynb)  
    Generating random numbers and distributions with NumPy's random module.
-1. [**Fourier Transform**](./codes/18-fourier-transform.ipynb)  
+1. [**Fourier Transform**](./code/18-fourier-transform.ipynb)  
    Understanding and applying Fourier transforms in NumPy.
-1. [**Efficient Computing**](./codes/19-efficient-computing.ipynb)  
+1. [**Efficient Computing**](./code/19-efficient-computing.ipynb)  
    Strategies for optimizing performance and memory usage in NumPy operations.
-1. [**Miscellaneous**](./codes/20-miscellaneous.ipynb)  
+1. [**Miscellaneous**](./code/20-miscellaneous.ipynb)  
    Additional topics and advanced features in NumPy.
-1. [**Looking Ahead**](./codes/21-looking-ahead.ipynb)  
+1. [**Looking Ahead**](./code/21-looking-ahead.ipynb)  
    Introduction to *Pandas* for data manipulation and *Matplotlib* for data visualization.
 
 ## 📋 Prerequisites
@@ -76,7 +76,7 @@ This project was developed using Python **v3.12.3**. If you encounter issues run
 
 ### 📝 List of Dependencies
 
-Installing **matplotlib** and **pandas** is **OPTIONAL**. They are used exclusively in the [**Looking Ahead Notebook**](./codes/21-looking-ahead.ipynb) to show an application of using them.
+Installing **matplotlib** and **pandas** is **OPTIONAL**. They are used exclusively in the [**Looking Ahead Notebook**](./code/21-looking-ahead.ipynb) to show an application of using them.
 
 [![numpy](https://img.shields.io/badge/numpy-2.1.3-orange)](https://pypi.org/project/numpy/2.1.3/)
 [![matplotlib](https://img.shields.io/badge/matplotlib-3.9.1-green)](https://pypi.org/project/matplotlib/3.9.1/)
