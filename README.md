@@ -72,7 +72,7 @@ An in-depth guide to mastering **NumPy**, covering fundamental to advanced array
 
 ## ⚙️ Setup
 
-This project was developed using Python **v3.12.3**. If you encounter issues running the specified version of dependencies, consider using this specific Python version.
+This project requires Python **v3.10** or higher. It was developed and tested using Python **v3.12.3**. If you encounter issues running the specified version of dependencies, consider using this version of Python.
 
 ### 📝 List of Dependencies
 
