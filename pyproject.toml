@@ -1,0 +1,28 @@
+[tool.poetry]
+package-mode = false
+name = "numpy_workshop"
+description = "An in-depth guide to mastering NumPy, covering fundamental to advanced array operations for data science and numerical computing"
+authors = ["Amirhossein Heydari <amirhosseinheydari78@gmail.com>"]
+maintainers = ["Amirhossein Heydari <amirhosseinheydari78@gmail.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/mr-pylin/numpy-workshop"
+keywords = ["NumPy", "data science", "numerical computing", "linear algebra", "arrays", "Python"]
+readme = "README.md"
+
+[tool.poetry.urls]
+"Amirhossein Heydari Homepage" = "https://mr-pylin.github.io"
+
+[tool.poetry.dependencies]
+python = "3.12.8"
+ipykernel = "^6.29.5"
+ipywidgets = "^8.1.5"
+matplotlib = "^3.10.0"
+numpy = "^2.2.1"
+pandas = "^2.2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 150
