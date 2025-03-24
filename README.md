@@ -14,48 +14,27 @@ An in-depth guide to mastering **NumPy**, covering fundamental to advanced array
 
 ### 📖 Main Notebooks
 
-1. [**Array Basics**](./code/01-array-basics.ipynb)  
-   Introduction to NumPy arrays
-1. [**Arithmetic Operations**](./code/02-arithmetic-operations.ipynb)  
-   Arithmetic operations between (array & scalar) or (array & array)
-1. [**Comparative Operations**](./code/03-comparative-operations.ipynb)  
-   Comparative operations between (array & scalar) or (array & array)
-1. [**Index & Slice**](./code/04-index-&-slice.ipynb)  
-   Basic and advanced indexing and slicing arrays including Mask & Filters
-1. [**Axes**](./code/05-axes.ipynb)  
-   Understanding use of axes in multi-dimensional arrays combined with methods [the hardest part in NumPy for newbies in my opinion]
-1. [**Array Manipulations**](./code/06-array-manipulations.ipynb)  
-   Techniques for updating values, appending, inserting, reshaping, concatenating, ...
-1. [**NdArray properties & methods**](./code/07-ndarray-members.ipynb)  
-   Comprehensive overview of properties and methods associated with NumPy arrays.
-1. [**Array Creation**](./code/08-array-creation.ipynb)  
-   Various methods to create NumPy arrays (e.g., `numpy.array`, `numpy.zeros`, etc.).
-1. [**Mathematics**](./code/09-mathematics.ipynb)  
-   Mathematical functions and operations available in NumPy
-1. [**Statistics**](./code/10-statistics.ipynb)  
-   Statistical functions for data analysis (mean, median, variance, etc.).
-1. [**Sort, Search & Count**](./code/11-sort-search-count.ipynb)  
-   Methods for sorting, searching, and counting elements in arrays.
-1. [**Logic**](./code/12-logic.ipynb)  
-   Logical operations and boolean indexing with NumPy arrays.
-1. [**Set**](./code/13-set.ipynb)  
-   Set operations for array elements (union, intersection, difference).
-1. [**Linear Algebra**](./code/14-linear-algebra.ipynb)  
-   Fundamental linear algebra operations using NumPy (matrix multiplication, determinants).
-1. [**Structured Array**](./code/15-structured-array.ipynb)  
-   Creating and manipulating structured arrays with custom data types.
-1. [**Input/Output**](./code/16-input-output.ipynb)  
-   Techniques for reading from and writing to files using NumPy.
-1. [**Random Generator**](./code/17-random-generator.ipynb)  
-   Generating random numbers and distributions with NumPy's random module.
-1. [**Fourier Transform**](./code/18-fourier-transform.ipynb)  
-   Understanding and applying Fourier transforms in NumPy.
-1. [**Efficient Computing**](./code/19-efficient-computing.ipynb)  
-   Strategies for optimizing performance and memory usage in NumPy operations.
-1. [**Miscellaneous**](./code/20-miscellaneous.ipynb)  
-   Additional topics and advanced features in NumPy.
-1. [**Looking Ahead**](./code/21-looking-ahead.ipynb)  
-   Introduction to *Pandas* for data manipulation and *Matplotlib* for data visualization.
+1. [**Array Basics**](./code/01-array-basics.ipynb)
+1. [**Arithmetic Operations**](./code/02-arithmetic-operations.ipynb)
+1. [**Comparative Operations**](./code/03-comparative-operations.ipynb)
+1. [**Index & Slice**](./code/04-index-&-slice.ipynb)
+1. [**Axes**](./code/05-axes.ipynb)
+1. [**Array Manipulations**](./code/06-array-manipulations.ipynb)
+1. [**NdArray properties & methods**](./code/07-ndarray-members.ipynb)
+1. [**Array Creation**](./code/08-array-creation.ipynb)
+1. [**Mathematics**](./code/09-mathematics.ipynb)
+1. [**Statistics**](./code/10-statistics.ipynb)
+1. [**Sort, Search & Count**](./code/11-sort-search-count.ipynb)
+1. [**Logic**](./code/12-logic.ipynb)
+1. [**Set**](./code/13-set.ipynb)
+1. [**Linear Algebra**](./code/14-linear-algebra.ipynb)
+1. [**Structured Array**](./code/15-structured-array.ipynb)
+1. [**Input/Output**](./code/16-input-output.ipynb)
+1. [**Random Generator**](./code/17-random-generator.ipynb)
+1. [**Fourier Transform**](./code/18-fourier-transform.ipynb)
+1. [**Efficient Computing**](./code/19-efficient-computing.ipynb)
+1. [**Miscellaneous**](./code/20-miscellaneous.ipynb)
+1. [**Looking Ahead**](./code/21-looking-ahead.ipynb)
 
 ## 📋 Prerequisites
 
@@ -84,23 +63,16 @@ Installing `matplotlib` and `pandas` is **OPTIONAL**. They are used exclusively 
 [![numpy](https://img.shields.io/badge/numpy-2.2.1-orange)](https://pypi.org/project/numpy/2.2.1/)
 [![pandas](https://img.shields.io/badge/pandas-2.2.3-yellow)](https://pypi.org/project/pandas/2.2.3/)
 
-### 📦 Install Dependencies
+### 📦 Installing Dependencies
 
-#### 📦 Method 1: Poetry (Recommended)
+#### 📦 Method 1: Poetry (**Recommended** ✅)
 
-Use [**Poetry**](https://python-poetry.org/) for dependency management. It handles dependencies, virtual environments, and locking versions more efficiently than pip. To install dependencies using Poetry:
+Use [**Poetry**](https://python-poetry.org/) for dependency management. It handles dependencies, virtual environments, and locking versions more efficiently than pip.  
+To install exact dependency versions specified in [**poetry.lock**](./poetry.lock) for consistent environments **without** installing the current project as a package:
 
-- **Option 1 [Recommended]**: Install exact dependency versions specified in [**poetry.lock**](./poetry.lock) for consistent environments:
-
-  ```bash
-  poetry install
-  ```
-
-- **Option 2**: Install the latest compatible dependency versions from [**pyproject.toml**](./pyproject.toml) and regenerate the [**poetry.lock**](./poetry.lock) file:
-
-  ```bash
-  poetry install --no-root
-  ```
+```bash
+poetry install --no-root
+```
 
 #### 📦 Method 2: Pip
 
@@ -109,40 +81,6 @@ Install all dependencies listed in [**requirements.txt**](./requirements.txt) us
 ```bash
 pip install -r requirements.txt
 ```
-
-#### 🌐 Connection Issues
-
-If you encounter connection issues during installation, you can try extending the **timeout** and increasing the number of **retries** with the following:
-
-- **For Poetry**: Use the following command to set the retries and timeout directly in the terminal **before running the install**:
-  - **Windows**:
-    - **PowerShell**:
-
-      ```bash
-      $env:POETRY_HTTP_TIMEOUT=300
-      $env:POETRY_HTTP_RETRIES=10
-      ```
-
-    - **Command Prompt**:
-
-      ```bash
-      set POETRY_HTTP_TIMEOUT=300
-      set POETRY_HTTP_RETRIES=10
-      ```
-
-  - **Linux/macOS**:
-    - **Terminal**:
-
-      ```bash
-      export POETRY_HTTP_TIMEOUT=300
-      export POETRY_HTTP_RETRIES=10
-      ```
-
-- **For Pip**: Use the `--retries` and `--timeout` flags directly in your pip command:
-
-  ```bash
-  pip install -r requirements.txt --retries 10 --timeout 300
-  ```
 
 ### 🛠️ Usage Instructions
 
@@ -186,6 +124,10 @@ If you encounter connection issues during installation, you can try extending th
   - An open-source **machine learning** library for Python developed by [**Meta AI**](https://ai.meta.com/), used for applications such as **deep learning** and **neural networks**.
   - Official site: [pytorch.org](https://pytorch.org/)
   - My PyTorch Workshop: [github.com/mr-pylin/pytorch-workshop](https://github.com/mr-pylin/pytorch-workshop)
+- **Media Processing**
+  - A comprehensive resource to explore media processing, from fundamental concepts to advanced techniques.
+  - Official sites: [opencv.org](https://opencv.org/) | [scikit-image.org](https://scikit-image.org/) | [scipy.org](https://scipy.org/)
+  - My Media Processing Workshop: [github.com/mr-pylin/media-processing-workshop](https://github.com/mr-pylin/media-processing-workshop)
 
 ## 🔍 Find Me
 
