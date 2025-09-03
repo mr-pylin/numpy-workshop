@@ -1,7 +1,7 @@
 # 🔢 NumPy Workshop
 
 [![License](https://img.shields.io/github/license/mr-pylin/numpy-workshop?color=blue)](https://github.com/mr-pylin/numpy-workshop/blob/main/LICENSE)
-[![Python Version](https://img.shields.io/badge/Python-3.12.8-yellow?logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3128/)
+[![Python Version](https://img.shields.io/badge/Python-3.13.7-yellow?logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3137/)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1faf9d4577d3406a9ac65a4cb8d3d4f1)](https://app.codacy.com/gh/mr-pylin/numpy-workshop/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Code Style](https://img.shields.io/badge/code%20style-black-black.svg)](https://github.com/psf/black)
 ![Repo Size](https://img.shields.io/github/repo-size/mr-pylin/numpy-workshop?color=lightblue)
@@ -51,36 +51,39 @@ An in-depth guide to mastering **NumPy**, covering fundamental to advanced array
 
 ## ⚙️ Setup
 
-This project requires Python **v3.10** or higher. It was developed and tested using Python **v3.12.8**. If you encounter issues running the specified version of dependencies, consider using this version of Python.
+This project requires Python **v3.10** or higher. It was developed and tested using Python **v3.13.7**. If you encounter issues running the specified version of dependencies, consider using this version of Python.
 
 ### 📝 List of Dependencies
 
 Installing `matplotlib` and `pandas` is **OPTIONAL**. They are used exclusively in the [**Looking Ahead Notebook**](./code/21-looking-ahead.ipynb) to show an application of using them.
 
-[![ipykernel](https://img.shields.io/badge/ipykernel-6.29.5-ff69b4)](https://pypi.org/project/ipykernel/6.29.5/)
-[![ipywidgets](https://img.shields.io/badge/ipywidgets-8.1.5-ff6347)](https://pypi.org/project/ipywidgets/8.1.5/)
-[![matplotlib](https://img.shields.io/badge/matplotlib-3.10.0-green)](https://pypi.org/project/matplotlib/3.10.0/)
-[![numpy](https://img.shields.io/badge/numpy-2.2.1-orange)](https://pypi.org/project/numpy/2.2.1/)
-[![pandas](https://img.shields.io/badge/pandas-2.2.3-yellow)](https://pypi.org/project/pandas/2.2.3/)
+[![ipykernel](https://img.shields.io/badge/ipykernel-6.30.1-ff69b4)](https://pypi.org/project/ipykernel/6.30.1/)
+[![matplotlib](https://img.shields.io/badge/matplotlib-3.10.6-green)](https://pypi.org/project/matplotlib/3.10.6/)
+[![numpy](https://img.shields.io/badge/numpy-2.3.2-orange)](https://pypi.org/project/numpy/2.3.2/)
+[![pandas](https://img.shields.io/badge/pandas-2.3.2-yellow)](https://pypi.org/project/pandas/2.3.2/)
+<!-- [![ipywidgets](https://img.shields.io/badge/ipywidgets-8.1.5-ff6347)](https://pypi.org/project/ipywidgets/8.1.5/) -->
 
 ### 📦 Installing Dependencies
 
-#### 📦 Method 1: Poetry (**Recommended** ✅)
+#### 📦 Method 1: uv (**Recommended** ✅)
 
-Use [**Poetry**](https://python-poetry.org/) for dependency management. It handles dependencies, virtual environments, and locking versions more efficiently than pip.  
-To install exact dependency versions specified in [**poetry.lock**](./poetry.lock) for consistent environments **without** installing the current project as a package:
+- Use [**uv**](https://docs.astral.sh/uv/) for dependency management. It handles dependencies, virtual environments, and locking versions more efficiently than pip.  
+- To install exact dependency versions specified in [**uv.lock**](./uv.lock) for consistent environments **without** installing the current project as a package:
 
-```bash
-poetry install --no-root
-```
+  ```bash
+  uv sync --no-install-project                   # Install only numpy
+  uv sync --no-install-project --extra complete  # Install numpy + optional dependencies
+  ```
 
 #### 📦 Method 2: Pip
 
-Install all dependencies listed in [**requirements.txt**](./requirements.txt) using [**pip**](https://pip.pypa.io/en/stable/installation/):
+- Install all dependencies listed in [**requirements.txt**](./requirements.txt) using [**pip**](https://pip.pypa.io/en/stable/installation/):
 
-```bash
-pip install -r requirements.txt
-```
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+- **Note**: The [**requirements.txt**](./requirements.txt) includes complete installation of dependencies. Comment `matplotlib` and `pandas` in order to install only `numpy`.
 
 ### 🛠️ Usage Instructions
 
@@ -91,7 +94,7 @@ pip install -r requirements.txt
 
 ✍️ **Notes**:  
 
-- It is **highly recommended** to stick with the exact dependency versions specified in [**poetry.lock**](./poetry.lock) or [**requirements.txt**](./requirements.txt) rather than using the latest package versions. The repository has been **tested** on these versions to ensure **compatibility** and **stability**.
+- It is **highly recommended** to stick with the exact dependency versions specified in [**uv.lock**](./uv.lock) or [**requirements.txt**](./requirements.txt) rather than using the latest package versions. The repository has been **tested** on these versions to ensure **compatibility** and **stability**.
 - This repository is **actively maintained**, and dependencies are **updated regularly** to the latest **stable** versions.
 - The **table of contents** embedded in the **notebooks** may not function correctly on **GitHub**.
 - For an improved experience, open the notebooks **locally** or view them via [**nbviewer**](https://nbviewer.org/github/mr-pylin/numpy-workshop).
@@ -126,7 +129,7 @@ pip install -r requirements.txt
   - My PyTorch Workshop: [github.com/mr-pylin/pytorch-workshop](https://github.com/mr-pylin/pytorch-workshop)
 - **Media Processing**
   - A comprehensive resource to explore media processing, from fundamental concepts to advanced techniques.
-  - Official sites: [opencv.org](https://opencv.org/) | [scikit-image.org](https://scikit-image.org/) | [scipy.org](https://scipy.org/)
+  - Official sites: [opencv.org](https://opencv.org/) | [scikit-image.org](https://scikit-image.org/) | [pillow.readthedocs.io](https://pillow.readthedocs.io/en/stable/index.html) | [scipy.org](https://scipy.org/)
   - My Media Processing Workshop: [github.com/mr-pylin/media-processing-workshop](https://github.com/mr-pylin/media-processing-workshop)
 
 ## 🔍 Find Me

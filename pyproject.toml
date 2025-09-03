@@ -1,28 +1,37 @@
-[tool.poetry]
-package-mode = false
-name = "numpy_workshop"
+[project]
+name = "numpy-workshop"
+version = "0.1.0"
+authors = [
+    {name = "Amirhossein Heydari", email = "amirhosseinheydari78@gmail.com"}
+]
+maintainers = [
+    {name = "Amirhossein Heydari", email = "amirhosseinheydari78@gmail.com"}
+]
 description = "An in-depth guide to mastering NumPy, covering fundamental to advanced array operations for data science and numerical computing"
-authors = ["Amirhossein Heydari <amirhosseinheydari78@gmail.com>"]
-maintainers = ["Amirhossein Heydari <amirhosseinheydari78@gmail.com>"]
-license = "Apache-2.0"
-repository = "https://github.com/mr-pylin/numpy-workshop"
 keywords = ["NumPy", "data science", "numerical computing", "linear algebra", "arrays", "Python"]
 readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.13.7"
+dependencies = [
+    "numpy>=2.3.2,<3.0.0",
+]
 
-[tool.poetry.urls]
-"Amirhossein Heydari Homepage" = "https://mr-pylin.github.io"
+[project.optional-dependencies]
+complete = [
+    "matplotlib>=3.10.6,<4.0.0",
+    "pandas>=2.3.2,<3.0.0",
+]
 
-[tool.poetry.dependencies]
-python = "3.12.8"
-ipykernel = "^6.29.5"
-ipywidgets = "^8.1.5"
-matplotlib = "^3.10.0"
-numpy = "^2.2.1"
-pandas = "^2.2.3"
+[dependency-groups]
+dev = [
+    "ipykernel>=6.30.1,<7.0.0",
+    # "ipywidgets>=8.1.7,<9.0.0",
+]
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[project.urls]
+Repository = "https://github.com/mr-pylin/numpy-workshop"
+"MyHomepage" = "https://mr-pylin.github.io"
 
 [tool.black]
 line-length = 120
