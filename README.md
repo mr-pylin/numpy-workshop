@@ -40,7 +40,7 @@ An in-depth guide to mastering **NumPy**, covering fundamental to advanced array
 
 - 👨‍💻 **Programming Fundamentals**
   - Proficiency in **Python** (data types, control structures, functions, classes, etc.).
-    - My Python Workshop: [github.com/mr-pylin/python-workshop](https://github.com/mr-pylin/python-workshop)
+    - My Python Workshop: [**github.com/mr-pylin/python-workshop**](https://github.com/mr-pylin/python-workshop)
 - 🔣 **Mathematics for Machine Learning**
   - 🔲 **Linear Algebra**: Vectors, matrices, matrix operations.
     - [**Linear Algebra Review and Reference**](https://www.cs.cmu.edu/%7Ezkolter/course/linalg/linalg_notes.pdf) written by [*Zico Kolter*](https://zicokolter.com).
@@ -118,19 +118,19 @@ Installing `matplotlib` and `pandas` is **OPTIONAL**. They are used exclusively 
 - **Pandas**
   - A powerful, open-source data analysis and manipulation library built on top of NumPy for Python
   - Official site: [pandas.pydata.org](https://pandas.pydata.org/)
-  - My Pandas Workshop: [Coming Soon](https://github.com/mr-pylin/#)
+  - My Pandas Workshop: [**Coming Soon**](https://github.com/mr-pylin/#)
 - **Data Visualization**
   - A comprehensive collection of Python libraries for creating static, animated, and interactive visualizations: **Matplotlib**, **Seaborn**, and **Plotly**.
   - Official sites: [matplotlib.org](https://matplotlib.org/) | [seaborn.pydata.org](https://seaborn.pydata.org/) | [plotly.com](https://plotly.com/)
-  - My MatPlotLib Workshop: [github.com/mr-pylin/data-visualization-workshop](https://github.com/mr-pylin/data-visualization-workshop)
+  - My MatPlotLib Workshop: [**github.com/mr-pylin/data-visualization-workshop**](https://github.com/mr-pylin/data-visualization-workshop)
 - **PyTorch**
   - An open-source **machine learning** library for Python developed by [**Meta AI**](https://ai.meta.com/), used for applications such as **deep learning** and **neural networks**.
   - Official site: [pytorch.org](https://pytorch.org/)
-  - My PyTorch Workshop: [github.com/mr-pylin/pytorch-workshop](https://github.com/mr-pylin/pytorch-workshop)
+  - My PyTorch Workshop: [**github.com/mr-pylin/pytorch-workshop**](https://github.com/mr-pylin/pytorch-workshop)
 - **Media Processing**
   - A comprehensive resource to explore media processing, from fundamental concepts to advanced techniques.
   - Official sites: [opencv.org](https://opencv.org/) | [scikit-image.org](https://scikit-image.org/) | [pillow.readthedocs.io](https://pillow.readthedocs.io/en/stable/index.html) | [scipy.org](https://scipy.org/)
-  - My Media Processing Workshop: [github.com/mr-pylin/media-processing-workshop](https://github.com/mr-pylin/media-processing-workshop)
+  - My Media Processing Workshop: [**github.com/mr-pylin/media-processing-workshop**](https://github.com/mr-pylin/media-processing-workshop)
 
 ## 🔍 Find Me
 
