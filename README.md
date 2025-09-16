@@ -144,3 +144,7 @@ I look forward to connecting with you! 🏃‍♂️
 
 This project is licensed under the **[Apache License 2.0](./LICENSE)**.  
 You are free to **use**, **modify**, and **distribute** this code, but you **must** include copies of both the [**LICENSE**](./LICENSE) and [**NOTICE**](./NOTICE) files in any distribution of your work.
+
+### ©️ Copyright Information
+
+- The images located in the [**assets/images/numpy/**](./assets/images/numpy/) folder are sourced from the [**NumPy press kit / website resources**](https://numpy.org/press-kit/) and are licensed under the [**BSD 3-Clause License**](https://numpy.org/devdocs/license.html).
