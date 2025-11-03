@@ -14,7 +14,7 @@ An in-depth guide to mastering **NumPy**, covering fundamental to advanced array
 
 ### 📖 Main Notebooks
 
-1. [**Array Basics**](./code/01-array-basics.ipynb)
+1. [**Introduction to Arrays**](./code/01-introduction.ipynb)
 1. [**Arithmetic Operations**](./code/02-arithmetic-operations.ipynb)
 1. [**Comparative Operations**](./code/03-comparative-operations.ipynb)
 1. [**Index & Slice**](./code/04-index-&-slice.ipynb)
