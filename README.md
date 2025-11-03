@@ -116,7 +116,7 @@ Installing `matplotlib` and `pandas` is **OPTIONAL**. They are used exclusively 
 - **Pandas**
   - A powerful, open-source data analysis and manipulation library built on top of NumPy for Python
   - Official site: [pandas.pydata.org](https://pandas.pydata.org/)
-  - My Pandas Workshop: [**Coming Soon**](https://github.com/mr-pylin/#)
+  - My Pandas Workshop: [**github.com/mr-pylin/pandas-workshop**](https://github.com/mr-pylin/pandas-workshop)
 - **Data Visualization**
   - A comprehensive collection of Python libraries for creating static, animated, and interactive visualizations: **Matplotlib**, **Seaborn**, and **Plotly**.
   - Official sites: [matplotlib.org](https://matplotlib.org/) | [seaborn.pydata.org](https://seaborn.pydata.org/) | [plotly.com](https://plotly.com/)
