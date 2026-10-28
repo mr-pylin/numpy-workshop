@@ -1,12 +1,13 @@
 # 🔢 NumPy Workshop
 
 [![License](https://img.shields.io/github/license/mr-pylin/numpy-workshop?color=blue)](https://github.com/mr-pylin/numpy-workshop/blob/main/LICENSE)
-[![Python Version](https://img.shields.io/badge/Python-3.14.0-yellow?logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3140/)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1faf9d4577d3406a9ac65a4cb8d3d4f1)](https://app.codacy.com/gh/mr-pylin/numpy-workshop/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Python Version](https://img.shields.io/badge/Python-3.15.1-yellow?logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3151/)
 [![Code Style](https://img.shields.io/badge/code%20style-black-black.svg)](https://github.com/psf/black)
 ![Repo Size](https://img.shields.io/github/repo-size/mr-pylin/numpy-workshop?color=lightblue)
 ![Last Updated](https://img.shields.io/github/last-commit/mr-pylin/numpy-workshop?color=orange)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?color=brightgreen)](https://github.com/mr-pylin/numpy-workshop/pulls)
+[![Telegram](https://img.shields.io/badge/Telegram-Group-black?logo=telegram)](https://t.me/python_topics)
+<!-- [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1faf9d4577d3406a9ac65a4cb8d3d4f1)](https://app.codacy.com/gh/mr-pylin/numpy-workshop/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) -->
 
 An in-depth guide to mastering **NumPy**, covering fundamental to advanced array operations for **data science** and **numerical computing**.
 
@@ -37,8 +38,11 @@ An in-depth guide to mastering **NumPy**, covering fundamental to advanced array
 
 ## 📋 Prerequisites
 
+> [!NOTE]
+> The mathematics requirements below are **not mandatory** but will significantly deepen your understanding of tensor concepts.
+
 - 👨‍💻 **Programming Fundamentals**
-  - Proficiency in **Python** (data types, control structures, functions, classes, etc.).
+  - 🐍 Proficiency in **Python** (data types, control structures, functions, classes, etc.).
     - My Python Workshop: [**github.com/mr-pylin/python-workshop**](https://github.com/mr-pylin/python-workshop)
 - 🔣 **Mathematics for Machine Learning**
   - 🔲 **Linear Algebra**: Vectors, matrices, matrix operations.
@@ -50,30 +54,31 @@ An in-depth guide to mastering **NumPy**, covering fundamental to advanced array
 
 ## ⚙️ Setup
 
-This project requires Python **v3.10** or higher. It was developed and tested using Python **v3.14.0**. If you encounter issues running the specified version of dependencies, consider using this version of Python.
+> [!IMPORTANT]
+> This project requires Python **v3.10** or higher. For **optimal compatibility** and to **avoid potential issues** with dependencies, it is **strongly advised** that you use the Python version specified in the [**.python-version**](.python-version) file.
 
 ### 📝 List of Dependencies
 
 Installing `matplotlib` and `pandas` is **OPTIONAL**. They are used exclusively in the [**Looking Ahead Notebook**](./code/21-looking-ahead.ipynb) to show an application of using them.
 
-[![ipykernel](https://img.shields.io/badge/ipykernel-7.0.1-ff69b4)](https://pypi.org/project/ipykernel/7.0.1/)
-[![matplotlib](https://img.shields.io/badge/matplotlib-3.10.7-green)](https://pypi.org/project/matplotlib/3.10.7/)
-[![numpy](https://img.shields.io/badge/numpy-2.3.4-orange)](https://pypi.org/project/numpy/2.3.4/)
-[![pandas](https://img.shields.io/badge/pandas-2.3.3-yellow)](https://pypi.org/project/pandas/2.3.3/)
+[![ipykernel](https://img.shields.io/badge/ipykernel-7.4.0-ff69b4)](https://pypi.org/project/ipykernel/7.4.0/)
+[![matplotlib](https://img.shields.io/badge/matplotlib-3.11.2-green)](https://pypi.org/project/matplotlib/3.11.2/)
+[![numpy](https://img.shields.io/badge/numpy-2.5.4-orange)](https://pypi.org/project/numpy/2.5.4/)
+[![pandas](https://img.shields.io/badge/pandas-3.1.0-yellow)](https://pypi.org/project/pandas/3.1.0/)
 
 ### 📦 Installing Dependencies
 
-#### 📦 Method 1: uv (**Recommended** ✅)
+#### 1️⃣ Method 1: uv (**Recommended** ✅)
 
 - Use [**uv**](https://docs.astral.sh/uv/) for dependency management. It handles dependencies, virtual environments, and locking versions more efficiently than pip.  
 - To install exact dependency versions specified in [**uv.lock**](./uv.lock) for consistent environments **without** installing the current project as a package:
 
   ```bash
-  uv sync --no-install-project                   # Install only numpy
-  uv sync --no-install-project --extra complete  # Install numpy + optional dependencies
+  uv sync --no-install-project                 # Install only numpy
+  uv sync --no-install-project --extra full    # Install numpy + optional dependencies
   ```
 
-#### 📦 Method 2: Pip
+#### 2️⃣ Method 2: pip
 
 - Install all dependencies listed in [**requirements.txt**](./requirements.txt) using [**pip**](https://pip.pypa.io/en/stable/installation/):
 
@@ -81,7 +86,11 @@ Installing `matplotlib` and `pandas` is **OPTIONAL**. They are used exclusively 
   pip install -r requirements.txt
   ```
 
-- **Note**: The [**requirements.txt**](./requirements.txt) includes complete installation of dependencies. Comment `matplotlib` and `pandas` in order to install only `numpy`.
+> [!WARNING]
+> The [**requirements.txt**](./requirements.txt) includes full installation of dependencies. Comment `matplotlib` and `pandas` in order to install only `numpy`.
+
+> [!CAUTION]
+> Pip does not lock dependency versions as strictly as `uv`. You may encounter version conflicts or reproducibility issues. Only use this method if you know what you are doing.
 
 ### 🛠️ Usage Instructions
 
@@ -90,12 +99,12 @@ Installing `matplotlib` and `pandas` is **OPTIONAL**. They are used exclusively 
 1. Select the correct Python kernel and virtual environment where the dependencies were installed.
 1. Allow **VS Code** to install any recommended dependencies for working with Jupyter Notebooks.
 
-✍️ **Notes**:  
-
-- It is **highly recommended** to stick with the exact dependency versions specified in [**uv.lock**](./uv.lock) or [**requirements.txt**](./requirements.txt) rather than using the latest package versions. The repository has been **tested** on these versions to ensure **compatibility** and **stability**.
-- This repository is **actively maintained**, and dependencies are **updated regularly** to the latest **stable** versions.
-- The **table of contents** embedded in the **notebooks** may not function correctly on **GitHub**.
-- For an improved experience, open the notebooks **locally** or view them via [**nbviewer**](https://nbviewer.org/github/mr-pylin/numpy-workshop).
+> [!NOTE]
+>
+> - Stick with the **exact dependency versions** specified in [**uv.lock**](./uv.lock) or [**requirements.txt**](./requirements.txt). The repository has been **tested** with these versions to ensure **compatibility** and **stability**.
+> - This repository is **actively maintained**, and dependencies are **updated regularly** to the latest **stable** versions.
+> - The **table of contents** embedded within **notebooks (`.ipynb` files)** may not function correctly on **GitHub**.
+> - For an improved experience, open the notebooks **locally** or view them via [**nbviewer**](https://nbviewer.org/github/mr-pylin/pytorch-workshop), rather than directly on **GitHub**.
 
 ## 🔗 Useful Links
 
@@ -130,18 +139,19 @@ Installing `matplotlib` and `pandas` is **OPTIONAL**. They are used exclusively 
   - Official sites: [opencv.org](https://opencv.org/) | [scikit-image.org](https://scikit-image.org/) | [pillow.readthedocs.io](https://pillow.readthedocs.io/en/stable/index.html) | [scipy.org](https://scipy.org/)
   - My Image Processing Workshop: [**github.com/mr-pylin/image-processing-workshop**](https://github.com/mr-pylin/image-processing-workshop)
 
-## 🔍 Find Me
+## 🤝 Contributions & Feedback
 
-Any mistakes, suggestions, or contributions? Feel free to reach out to me at:
+Found an issue, have a suggestion, or wish to contribute? Your input is **highly valued**.  
 
-- 📍[**linktr.ee/mr_pylin**](https://linktr.ee/mr_pylin)
+- 📍 All links: [**linktr.ee/mr_pylin**](https://linktr.ee/mr_pylin)
+- 💬 Telegram Group: [**@python_topics**](https://t.me/python_topics)
+- 📧 Email: [**amirhosseinheydari78@gmail.com**](mailto:amirhosseinheydari78@gmail.com)
 
 I look forward to connecting with you! 🏃‍♂️
 
 ## 📄 License
 
-This project is licensed under the **[Apache License 2.0](./LICENSE)**.  
-You are free to **use**, **modify**, and **distribute** this code, but you **must** include copies of both the [**LICENSE**](./LICENSE) and [**NOTICE**](./NOTICE) files in any distribution of your work.
+This project's code is licensed under the **[Apache License 2.0](./LICENSE)**. This license grants you the freedom to **use**, **modify**, and **distribute** the code. However, any distribution of the code **must** include copies of both the [**LICENSE**](./LICENSE) and [**NOTICE**](./LICENSE) files.
 
 ### ©️ Copyright Information
 
